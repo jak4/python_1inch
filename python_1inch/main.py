@@ -13,7 +13,8 @@ class OneInchExchange:
 
     versions = dict(
         # v2 = "v2.0",
-        v2_1 = "v2.1"
+        #v2_1 = "v2.1"
+        v3 = "v3.0"
     )
 
     endpoints = dict(
@@ -33,7 +34,8 @@ class OneInchExchange:
 
     def __init__(self, address, chain='ethereum'):
         self.address = address
-        self.version = 'v2.1'
+        #self.version = 'v2.1'
+        self.version = 'v3.0'
         self.chain_id = self.chains[chain]
         self.chain = chain
         # self.get_tokens()
